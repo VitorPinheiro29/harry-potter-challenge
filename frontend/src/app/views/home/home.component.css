@@ -1,0 +1,26 @@
+.home-section {
+  background-color: #696969;
+}
+
+.filter-content {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  max-width: 300px;
+  position: relative;
+  justify-content: space-between;
+}
+
+.filter-content .filter-title {
+  font-family: Poppins;
+  margin-top: 0.8rem;
+}
+
+.card-content {
+  width: 60%;
+  border-radius: 12;
+}
+
+.card-content .image {
+  width: 10rem;
+}
