@@ -1,7 +1,8 @@
 <html>
   <section class="home-section">
-    <h1>Conheça, explore e se aventure pelas casas da sua saga favorita</h1>
-    <h2>Cada casa tem seus respectivos personagens.</h2>
+    <h1 class="home-title">
+      Explore e se divirta com seus personagens favoritos!
+    </h1>
     <div class="filter-content">
       <h1 class="filter-title">Filtro</h1>
       <mat-form-field appearance="fill">
@@ -14,15 +15,18 @@
         </mat-select>
       </mat-form-field>
     </div>
-    <mat-card class="card-content">
-      <mat-card-content>
-        <h1>Uhul</h1>
+    <mat-card class="card-style">
+      <mat-card-content class="card-content">
+        <img
+          class="image"
+          src="http://hp-api.herokuapp.com/images/harry.jpg"
+          mat-card-image
+        />
+        <div class="information">
+          <h1 class="character-name">Harry Potter</h1>
+          <h1 class="character-author">Daniel Redcliff</h1>
+        </div>
       </mat-card-content>
-      <img
-        class="image"
-        src="http://hp-api.herokuapp.com/images/harry.jpg"
-        mat-card-image
-      />
     </mat-card>
   </section>
 </html>

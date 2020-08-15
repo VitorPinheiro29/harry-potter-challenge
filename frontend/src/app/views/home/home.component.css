@@ -1,5 +1,14 @@
 .home-section {
-  background-color: #696969;
+  background-color: #44443b;
+  height: 100%;
+}
+
+.home-section .home-title {
+  text-align: center;
+  padding-top: 2rem;
+
+  font-weight: 500;
+  font-size: 2rem;
 }
 
 .filter-content {
@@ -9,6 +18,7 @@
   max-width: 300px;
   position: relative;
   justify-content: space-between;
+  margin-left: 18.5%;
 }
 
 .filter-content .filter-title {
@@ -16,11 +26,31 @@
   margin-top: 0.8rem;
 }
 
-.card-content {
+.card-style {
   width: 60%;
+  height: 15rem;
+
+  display: flex;
+  flex-direction: row;
+
+  text-align: center;
+  margin-top: 1rem;
+  margin-left: 18.5%;
+
+  border: 2.25px solid black;
   border-radius: 12;
 }
 
-.card-content .image {
-  width: 10rem;
+.card-style .card-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.card-style .image {
+  width: 13rem;
+  height: 13rem;
+
+  border: 1.5px solid black;
+  border-radius: 5%;
 }

@@ -17,6 +17,7 @@ import { NavComponent } from './components/template/nav/nav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from './views/home/home.component';
+import { CharactersComponent } from './views/characters/characters.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { HomeComponent } from './views/home/home.component';
     FooterComponent,
     NavComponent,
     HomeComponent,
+    CharactersComponent,
   ],
   imports: [
     BrowserModule,
