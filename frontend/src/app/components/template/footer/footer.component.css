@@ -1,4 +1,17 @@
 .footer {
-  bottom: 0;
   display: flex;
+
+  position: fixed;
+  bottom: 0;
+
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .footer {
+    width: 100vw;
+  }
+
+  .footer-title {
+    font-size: 0.85rem;
+  }
 }

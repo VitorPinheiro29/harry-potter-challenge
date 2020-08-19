@@ -1,0 +1,364 @@
+.characters-section {
+  background-color: #44443b;
+  min-height: 665px;
+}
+
+.characters-section .characters-section-title {
+  text-align: center;
+  padding-top: 2rem;
+
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.characters-section .card-details {
+  display: flex block;
+  flex-direction: row;
+
+  width: 80vw;
+  margin-left: 8%;
+
+  border: 3px solid black;
+  background-color: #2e2e25;
+  border-radius: 5px;
+}
+
+.characters-section .card-details:hover {
+  border: 4px solid black;
+}
+
+.characters-section .card-details .details-container {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.characters-section .card-details .details-container .image-container {
+  display: flex;
+  width: 350px;
+  height: 450px;
+}
+
+.characters-section .card-details .details-container .image-container .image {
+  width: 100%;
+
+  border: 1.5px solid black;
+  border-radius: 5%;
+}
+
+.characters-section .card-details .details-container .lists-container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.characters-section
+  .card-details
+  .details-container
+  .lists-container
+  .title-list-container {
+  display: flex;
+  justify-content: center;
+}
+
+.characters-section
+  .card-details
+  .details-container
+  .lists-container
+  .details-lists {
+  display: flex;
+  flex-direction: row;
+}
+
+.characters-section
+  .card-details
+  .details-container
+  .lists-container
+  .details-lists
+  .left-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-left: 5%;
+  width: 50%;
+}
+.list-item {
+  font-family: Ubuntu;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.075rem;
+}
+
+.characters-section
+  .card-details
+  .details-container
+  .lists-container
+  .details-lists
+  .right-list {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 5%;
+  width: 50%;
+}
+
+.characters-section
+  .card-details
+  .details-container
+  .lists-container
+  .bottom-list-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 5%;
+}
+.characters-section
+  .card-details
+  .details-container
+  .lists-container
+  .bottom-list-container
+  .subtitle-content {
+  display: flex;
+  justify-content: center;
+}
+
+.characters-section
+  .card-details
+  .details-container
+  .lists-container
+  .bottom-list-container
+  .subtitle-content
+  .subtitle-list {
+  font-size: 2.2rem;
+}
+
+.characters-section
+  .card-details
+  .details-container
+  .lists-container
+  .bottom-list-container
+  .bottom-list-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.characters-section
+  .card-details
+  .details-container
+  .lists-container
+  .title-list {
+  padding-top: 1%;
+
+  font-family: Ubuntu;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  .characters-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 1000px;
+  }
+
+  .characters-section .card-details {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+    width: 80%;
+    margin-bottom: 20%;
+  }
+
+  .characters-section .card-details .mat-list-item-content .details-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .characters-section
+    .card-details
+    .details-container
+    .lists-container
+    .title-list-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .characters-section
+    .card-details
+    .details-container
+    .lists-container
+    .title-list-container
+    .title-list {
+    padding-top: 10%;
+    padding-left: 40%;
+    font-size: 2.5rem;
+  }
+
+  .characters-section .card-details .details-container .image-container {
+    display: flex;
+    width: 100%;
+    height: 500px;
+  }
+
+  .characters-section .card-details .details-container .image-container .image {
+    border-radius: 0;
+  }
+
+  .characters-section
+    .card-details
+    .details-container
+    .lists-container
+    .details-lists {
+    display: flex;
+    justify-content: space-between;
+    width: 75vw;
+    flex-direction: row;
+  }
+
+  .characters-section
+    .card-details
+    .details-container
+    .lists-container
+    .details-lists
+    .left-list {
+    width: 50%;
+    margin-left: 10%;
+  }
+  .list-item {
+    font-family: Ubuntu;
+    font-size: 1.4rem;
+    line-height: 2;
+    letter-spacing: 0.075rem;
+  }
+
+  .characters-section
+    .card-details
+    .details-container
+    .lists-container
+    .details-lists
+    .right-list {
+    margin-left: 0%;
+    width: 50%;
+  }
+
+  .characters-section
+    .card-details
+    .details-container
+    .lists-container
+    .bottom-list-container {
+    width: 70vw;
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 600px) {
+  .characters-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 1000px;
+  }
+
+  .characters-section .card-details {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+    width: 80%;
+    margin-bottom: 20%;
+  }
+
+  .characters-section .card-details .mat-list-item-content .details-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .characters-section
+    .card-details
+    .details-container
+    .lists-container
+    .title-list-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .characters-section
+    .card-details
+    .details-container
+    .lists-container
+    .title-list-container
+    .title-list {
+    padding-top: 10%;
+    font-size: 2.5rem;
+    padding-left: 0%;
+  }
+
+  .characters-section .card-details .details-container .image-container {
+    display: flex;
+    width: 100%;
+    height: 300px;
+  }
+
+  .characters-section .card-details .details-container .image-container .image {
+    border-radius: 0;
+  }
+
+  .characters-section
+    .card-details
+    .details-container
+    .lists-container
+    .details-lists {
+    flex-direction: column;
+  }
+
+  .characters-section
+    .card-details
+    .details-container
+    .lists-container
+    .details-lists
+    .left-list {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .list-item {
+    font-family: Ubuntu;
+    font-size: 1rem;
+    line-height: 2;
+    letter-spacing: 0.075rem;
+  }
+
+  .characters-section
+    .card-details
+    .details-container
+    .lists-container
+    .details-lists
+    .right-list {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  .characters-section
+    .card-details
+    .details-container
+    .lists-container
+    .bottom-list-container {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .characters-section
+    .card-details
+    .details-container
+    .lists-container
+    .bottom-list-container
+    .bottom-list-items {
+    flex-direction: column;
+  }
+}

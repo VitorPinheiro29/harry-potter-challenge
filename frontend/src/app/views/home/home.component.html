@@ -1,32 +1,58 @@
 <html>
   <section class="home-section">
     <h1 class="home-title">
-      Explore e se divirta com seus personagens favoritos!
+      Explore and have fun with your favorite characters!
     </h1>
     <div class="filter-content">
-      <h1 class="filter-title">Filtro</h1>
+      <h1 class="filter-title">Filter</h1>
       <mat-form-field appearance="fill">
-        <mat-label>Casa</mat-label>
-        <mat-select>
-          <mat-option value="option1">Grifinória</mat-option>
-          <mat-option value="option2">Sonserina</mat-option>
-          <mat-option value="option3">Corvinal</mat-option>
-          <mat-option value="option3">Lufa-Lufa</mat-option>
+        <mat-label>Gryffindor</mat-label>
+        <mat-select (selectionChange)="onHouseChange($event)">
+          <mat-option value="Gryffindor">Gryffindor</mat-option>
+          <mat-option value="Slytherin">Slytherin</mat-option>
+          <mat-option value="Ravenclaw">Ravenclaw</mat-option>
+          <mat-option value="Hufflepuff">Hufflepuff</mat-option>
         </mat-select>
       </mat-form-field>
     </div>
-    <mat-card class="card-style">
-      <mat-card-content class="card-content">
-        <img
-          class="image"
-          src="http://hp-api.herokuapp.com/images/harry.jpg"
-          mat-card-image
-        />
-        <div class="information">
-          <h1 class="character-name">Harry Potter</h1>
-          <h1 class="character-author">Daniel Redcliff</h1>
+
+    <div class="card-group">
+      <div
+        *ngFor="let card of charactersCard"
+        class="card-item"
+        (click)="navigateToCharacterDetails(card.actor)"
+      >
+        <div class="mat-list-item-content">
+          <div class="mat-list-content">
+            <div class="image-container">
+              <img class="image" src="{{ card.image }}" />
+            </div>
+            <div class="informantions-container">
+              <h1 class="informantion-detail">
+                <strong>Character: </strong>{{ card.name }}
+              </h1>
+              <h1 class="informantion-detail">
+                <strong>Actor: </strong>{{ card.actor }}
+              </h1>
+            </div>
+          </div>
         </div>
-      </mat-card-content>
-    </mat-card>
+      </div>
+    </div>
   </section>
 </html>
+
+<!--<mat-card (click)="navigateToCharacterDetails()" class="card-style">
+  <mat-card-content class="card-content">
+    <img
+      class="image"
+      src="http://hp-api.herokuapp.com/images/harry.jpg"
+    />
+    <div class="information-container">
+      <span class="information-title">Nome do personagem</span>
+      <h1 class="information-detail">Harry Potter</h1>
+      <span class="information-title">Nome do ator</span>
+      <h1 class="information-detail">Daniel Redcliff</h1>
+    </div>
+  </mat-card-content>
+</mat-card>-->

@@ -25,11 +25,13 @@
 
 .header .logo {
   max-height: 5.5rem;
+  padding-left: 5%;
 }
 
 .header .logo:hover {
   opacity: 0.9;
   max-height: 6rem;
+  padding-left: 2%;
 }
 
 .header .text-logo {
@@ -39,4 +41,14 @@
 .header .image-right {
   max-width: 7rem;
   margin-left: 0;
+}
+
+@media (max-width: 740px) {
+  .header .image-left {
+    display: none;
+  }
+
+  .header .image-right {
+    display: none;
+  }
 }
