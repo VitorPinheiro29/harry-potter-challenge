@@ -1,12 +1,15 @@
 <html>
+  <!--View start-->
   <section class="home-section">
     <h1 class="home-title">
       Explore and have fun with your favorite characters!
     </h1>
+
+    <!--Filter-->
     <div class="filter-content">
       <h1 class="filter-title">Filter</h1>
       <mat-form-field appearance="fill">
-        <mat-label>Gryffindor</mat-label>
+        <mat-label>Casa</mat-label>
         <mat-select (selectionChange)="onHouseChange($event)">
           <mat-option value="Gryffindor">Gryffindor</mat-option>
           <mat-option value="Slytherin">Slytherin</mat-option>
@@ -16,6 +19,7 @@
       </mat-form-field>
     </div>
 
+    <!--Cards-->
     <div class="card-group">
       <div
         *ngFor="let card of charactersCard"

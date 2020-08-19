@@ -17,6 +17,7 @@ export class HomeComponent implements OnInit {
 
   charactersCard: Character[];
 
+  //Capturing event in the select
   onHouseChange(obj) {
     console.log(obj.value);
 
@@ -27,6 +28,7 @@ export class HomeComponent implements OnInit {
       });
   }
 
+  //When to start the application
   ngOnInit(): void {
     this.characterService
       .charactersByHouse('Gryffindor')
@@ -35,6 +37,7 @@ export class HomeComponent implements OnInit {
       });
   }
 
+  //Router function
   navigateToCharacterDetails(actorName: String): void {
     this.router.navigate(['/characters-details', actorName]);
   }

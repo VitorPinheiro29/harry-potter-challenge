@@ -1,89 +1,97 @@
 <html>
+  <!--View start-->
   <section class="characters-section">
     <h1 class="characters-section-title">
       Learn all about
       {{ characterDetail.name }}
     </h1>
-    <mat-card class="card-details">
-      <div class="mat-list-item-content">
-        <div class="details-container">
-          <div class="image-container">
-            <img class="image" src="{{ characterDetail.image }}" />
-          </div>
-          <div class="lists-container">
-            <div class="title-list-container">
-              <h1 class="title-list">{{ characterDetail.name }}</h1>
+
+    <!--Card-->
+    <div class="card-container">
+      <mat-card class="card-details">
+        <div class="mat-list-item-content">
+          <div class="details-container">
+            <div class="image-container">
+              <img class="image" src="{{ characterDetail.image }}" />
             </div>
-            <div class="details-lists">
-              <ul class="left-list">
-                <li class="list-item">
-                  <strong>Specie: </strong>{{ characterDetail.species }}
-                </li>
-                <li class="list-item">
-                  <strong>Gender: </strong>{{ characterDetail.gender }}
-                </li>
-                <li class="list-item">
-                  <strong>House: </strong>{{ characterDetail.house }}
-                </li>
-                <li class="list-item">
-                  <strong>Date of birth: </strong
-                  >{{ characterDetail.dateOfBirth }}
-                </li>
-                <li class="list-item">
-                  <strong>Year of birth: </strong
-                  >{{ characterDetail.yearOfBirth }}
-                </li>
-                <li class="list-item">
-                  <strong>Ancestry: </strong>{{ characterDetail.ancestry }}
-                </li>
-                <li class="list-item">
-                  <strong>Eye colour: </strong>{{ characterDetail.eyeColour }}
-                </li>
-              </ul>
-              <ul class="right-list">
-                <li class="list-item">
-                  <strong>Hair colour: </strong>{{ characterDetail.hairColour }}
-                </li>
-                <li class="list-item">
-                  <strong>Patronus: </strong>{{ characterDetail.patronus }}
-                </li>
-                <li class="list-item">
-                  <strong>Hogwarts Student: </strong
-                  >{{ characterDetail.hogwartsStudent }}
-                </li>
-                <li class="list-item">
-                  <strong>Hogwarts Staff: </strong
-                  >{{ characterDetail.hogwartsStaff }}
-                </li>
-                <li class="list-item">
-                  <strong>Actor: </strong>{{ characterDetail.actor }}
-                </li>
-                <li class="list-item">
-                  <strong>Alive: </strong>
-                  <span *ngIf="characterDetail.alive">Yes</span>
-                  <span *ngIf="!characterDetail.alive">No</span>
-                </li>
-              </ul>
-            </div>
-            <div class="bottom-list-container">
-              <div class="subtitle-content">
-                <h2 class="subtitle-list">Wand</h2>
+            <div class="lists-container">
+              <div class="title-list-container">
+                <h1 class="title-list">{{ characterDetail.name }}</h1>
               </div>
-              <ul class="bottom-list-items">
-                <li class="list-item">
-                  <strong>Wood: </strong>{{ characterDetail.wand.wood }}
-                </li>
-                <li class="list-item">
-                  <strong>Core: </strong>{{ characterDetail.wand.core }}
-                </li>
-                <li class="list-item">
-                  <strong>Lenght: </strong>{{ characterDetail.wand.length }}
-                </li>
-              </ul>
+              <div class="details-lists">
+                <ul class="left-list">
+                  <li class="list-item">
+                    <strong>Specie: </strong>{{ characterDetail.species }}
+                  </li>
+                  <li class="list-item">
+                    <strong>Gender: </strong>{{ characterDetail.gender }}
+                  </li>
+                  <li class="list-item">
+                    <strong>House: </strong>{{ characterDetail.house }}
+                  </li>
+                  <li class="list-item">
+                    <strong>Date of birth: </strong
+                    >{{ characterDetail.dateOfBirth }}
+                  </li>
+                  <li class="list-item">
+                    <strong>Year of birth: </strong
+                    >{{ characterDetail.yearOfBirth }}
+                  </li>
+                  <li class="list-item">
+                    <strong>Ancestry: </strong>{{ characterDetail.ancestry }}
+                  </li>
+                  <li class="list-item">
+                    <strong>Eye colour: </strong>{{ characterDetail.eyeColour }}
+                  </li>
+                </ul>
+                <ul class="right-list">
+                  <li class="list-item">
+                    <strong>Hair colour: </strong
+                    >{{ characterDetail.hairColour }}
+                  </li>
+                  <li class="list-item">
+                    <strong>Patronus: </strong>{{ characterDetail.patronus }}
+                  </li>
+                  <li class="list-item">
+                    <strong>Hogwarts Student: </strong>
+                    <span *ngIf="characterDetail.hogwartsStudent">Yes</span>
+                    <span *ngIf="!characterDetail.hogwartsStudent">No</span>
+                  </li>
+                  <li class="list-item">
+                    <strong>Hogwarts Staff: </strong
+                    ><span *ngIf="characterDetail.hogwartsStaff">Yes</span>
+                    <span *ngIf="!characterDetail.hogwartsStaff">No</span>
+                  </li>
+                  <li class="list-item">
+                    <strong>Actor: </strong>{{ characterDetail.actor }}
+                  </li>
+                  <li class="list-item">
+                    <strong>Alive: </strong>
+                    <span *ngIf="characterDetail.alive">Yes</span>
+                    <span *ngIf="!characterDetail.alive">No</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="bottom-list-container">
+                <div class="subtitle-content">
+                  <h2 class="subtitle-list">Wand</h2>
+                </div>
+                <ul class="bottom-list-items">
+                  <li class="list-item">
+                    <strong>Wood: </strong>{{ characterDetail.wand.wood }}
+                  </li>
+                  <li class="list-item">
+                    <strong>Core: </strong>{{ characterDetail.wand.core }}
+                  </li>
+                  <li class="list-item">
+                    <strong>Lenght: </strong>{{ characterDetail.wand.length }}
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </mat-card>
+      </mat-card>
+    </div>
   </section>
 </html>
